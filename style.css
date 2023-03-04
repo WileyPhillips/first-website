@@ -1,0 +1,124 @@
+/* DEBUG */
+/* * {
+    background-color: black !important;
+    color: black !important;
+    border: 2px solid red !important;
+} */
+
+nav ul {
+    text-align: center;  
+    background-color: #c44900;
+    padding-top: 5px;
+  }
+  
+  nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px;
+    margin:2px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #e8e5e1;
+  }
+  
+  /* my attempt that failed due to not being able to change image opacity
+  #hero {
+    background-image: url(https://i.pinimg.com/originals/1b/5f/b0/1b5fb0290f4edb619e2e304ab01d5e4f.jpg);
+    background-size: cover;
+    background-color: red;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-position: bottom;
+    text-shadow: darkgray;
+  }*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #efd6ac;
+  }
+  
+  header {
+    background-color: #efd6ac;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.pinimg.com/originals/1b/5f/b0/1b5fb0290f4edb619e2e304ab01d5e4f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+  }
+  
+  .hero-content {
+    position: relative;
+  }
+  
+  .hero h1 {
+    color: white;
+    text-shadow: 3px 3px black;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+  }
+  
+  .hero h3 {
+    color: #e8e5e1;
+    text-shadow: 3px 3px black;
+  }
+  
+  main {
+    font-family: 'Lora', serif;
+    margin: 20px;
+    text-align: center;
+    color: #04151f;
+  }
+    
+  main h1 {
+    color: #183a37;
+    text-align: left;
+    font-size: 30px;
+  }
+    
+  main img {
+      
+    float: left;
+    margin: 5px;
+    width: 220px;
+  }
+    
+  main p {
+    text-align: justify;
+    font-size: 20px;
+  }
+  
+  
+  
+  
